@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-logo {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+#nav-left a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: opacity 0.2s ease;
+}
+
+#nav-left a:hover {
+    opacity: 0.75;
+}
+
+#nav-left a.active {
+    border-bottom: 3px solid white;
+    font-weight: 700;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+
+#ip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    color: #1e293b;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#ip:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.1);
+}
+
+.copy-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+#ip:hover .copy-icon {
+    opacity: 1;
+}
+
+#discord {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 24px;
+    background-color: rgb(88, 101, 242);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid rgb(88, 101, 242);
+    border-radius: 9999px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#discord:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+#main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#main-logo img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#main-ip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#main-ip-button {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    min-height: 70px;
+    padding: 12px 14px 12px 18px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#main-ip-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.ip-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+#ip-label {
+    display: block;
+    color: #64748b;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+#main-ip-address {
+    display: block;
+    color: #111827;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-left: auto;
+    padding: 9px 12px;
+    background-color: #f1f5f9;
+    color: #334155;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#main-ip-button:hover #copy {
+    background-color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+#copy .copy-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+}
+
+.main-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    height: 55px;
+    border-radius: 22px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.store-button {
+    background-color: #45a3df;
+}
+
+.discord-button {
+    background-color: #5865f2;
+}
+
+.main-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.main-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* ================= RESPONSIVE ================= */
+/* Everything above this line is unchanged. Below just adjusts
+   sizing/spacing at smaller widths so nothing overflows or
+   overlaps on tablets and phones. */
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    #nav-left {
+        margin-left: 15px;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    #nav-left a {
+        font-size: 17px;
+    }
+
+    #nav-right {
+        margin-left: auto;
+    }
+
+    #main-logo img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 8px;
+    }
+
+    .nav-logo {
+        height: 56px;
+    }
+
+    #nav-left {
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    #nav-left a {
+        font-size: 15px;
+    }
+
+    #nav-right {
+        gap: 8px;
+    }
+
+    #ip {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    #discord {
+        height: 38px;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    #main-logo {
+        margin-top: 15px;
+    }
+
+    #main-logo img {
+        max-width: 96%;
+    }
+
+    #main-ip {
+        margin-top: 26px;
+    }
+
+    #main-ip-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .main-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .main-button {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    #nav-left {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+    }
+
+    #nav-right {
+        margin-left: 0;
+    }
+
+    #ip #ip-label,
+    #ip {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    #main-ip-button {
+        min-height: 62px;
+        padding: 10px 12px 10px 14px;
+    }
+
+    #main-ip-address {
+        font-size: 16px;
+    }
+}
+/* ---------- footer ---------- */
+
+footer {
+    padding: 26px 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+}
