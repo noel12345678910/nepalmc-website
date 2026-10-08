@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store &middot; NepalMC</title>
+    <meta name="description" content="Buy NepCoins for NepalMC and spend them on ranks and keys in game with /store.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+
+    <div id="page-content">
+
+        <header>
+            <nav class="navbar">
+
+                <a href="index.html">
+                    <img src="assets/logo.png" class="nav-logo" alt="NepalMC">
+                </a>
+
+                <ul id="nav-left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vote.html">Vote</a></li>
+                    <li><a href="store.html" class="active">Store</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                </ul>
+
+                <ul id="nav-right">
+                    <li>
+                        <a href="https://discord.gg/BeVw4jVtEf" id="discord">
+                            Discord
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="store-page">
+
+            <section class="top">
+                <div class="left">
+                    <p class="eyebrow">NepalMC official store</p>
+                    <h1 class="label">Get your NepCoins</h1>
+
+                    <p class="lede">
+                        NepCoins buy ranks and keys. Pick a package below, then spend them
+                        in game with <code>/store</code>.
+                    </p>
+
+                    <div class="additon">
+
+                        <div class="card">
+                            <svg width="64px" height="64px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z" fill="#feffff"></path>
+                            </svg>
+
+                            <h6 class="add-heading">Support NepalMC</h6>
+                            <p>Every purchase keeps the server running</p>
+                        </div>
+
+                        <div class="card">
+                            <svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#fefefe" fill="none" aria-hidden="true">
+                                <path d="M21.68,42.22H37.17a1.68,1.68,0,0,0,1.68-1.68L44.7,19.12A1.68,1.68,0,0,0,43,17.44H17.61a1.69,1.69,0,0,0-1.69,1.68l-5,21.42a1.68,1.68,0,0,0,1.68,1.68h2.18"></path>
+                                <path d="M41.66,42.22H38.19l5-17.29h8.22a.85.85,0,0,1,.65.3l3.58,6.3a.81.81,0,0,1,.2.53L52.51,42.22h-3.6"></path>
+                                <ellipse cx="18.31" cy="43.31" rx="3.71" ry="3.76"></ellipse>
+                                <ellipse cx="45.35" cy="43.31" rx="3.71" ry="3.76"></ellipse>
+                                <line x1="23.25" y1="22.36" x2="6.87" y2="22.36" stroke-linecap="round"></line>
+                                <line x1="20.02" y1="27.6" x2="8.45" y2="27.6" stroke-linecap="round"></line>
+                                <line x1="21.19" y1="33.5" x2="3.21" y2="33.5" stroke-linecap="round"></line>
+                            </svg>
+
+                            <h6 class="add-heading">Delivered within 24 hours</h6>
+                            <p>Handled by real staff, not a bot</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="assets/store_main.png" alt="NepCoins">
+                </div>
+            </section>
+
+            <section class="main-body">
+
+                <div class="main-top">
+                    <img src="package_img/package1.png" alt="" aria-hidden="true">
+
+                    <div>
+                        <h3>NepCoin packages</h3>
+                        <p>
+                            Pick a package and pay. Keep the payment receipt &mdash;
+                            you'll be asked to upload a screenshot of it to confirm your order.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="packages">
+
+                    <div class="package">
+                        <img src="package_img/package1.png" alt="50 NepCoins">
+                        <h2>50 NepCoins</h2>
+                        <p class="price">Rs 49</p>
+                        <button type="button" onclick="showBuyPopup('50 NepCoins', 'Rs 49', 'package_img/package1.png')">
+                            Buy now
+                        </button>
+                    </div>
+
+                    <div class="package">
+                        <img src="package_img/package2.png" alt="100 NepCoins">
+                        <h2>100 NepCoins</h2>
+                        <p class="price">Rs 99</p>
+                        <button type="button" onclick="showBuyPopup('100 NepCoins', 'Rs 99', 'package_img/package2.png')">
+                            Buy now
+                        </button>
+                    </div>
+
+                    <div class="package">
+                        <img src="package_img/package3.png" alt="250 NepCoins">
+                        <h2>250 NepCoins</h2>
+                        <p class="price">Rs 239</p>
+                        <button type="button" onclick="showBuyPopup('250 NepCoins', 'Rs 239', 'package_img/package3.png')">
+                            Buy now
+                        </button>
+                    </div>
+
+                    <div class="package">
+                        <img src="package_img/package4.png" alt="500 NepCoins">
+                        <h2>500 NepCoins</h2>
+                        <p class="price">Rs 449</p>
+                        <button type="button" onclick="showBuyPopup('500 NepCoins', 'Rs 449', 'package_img/package4.png')">
+                            Buy now
+                        </button>
+                    </div>
+
+                    <div class="package featured">
+                        <img src="package_img/package5.png" alt="1,000 NepCoins">
+                        <h2>1,000 NepCoins</h2>
+                        <p class="price">Rs 849</p>
+                        <button type="button" onclick="showBuyPopup('1,000 NepCoins', 'Rs 849', 'package_img/package5.png')">
+                            Buy now
+                        </button>
+                    </div>
+
+                    <div class="package">
+                        <img src="package_img/package6.png" alt="2,500 NepCoins">
+                        <h2>2,500 NepCoins</h2>
+                        <p class="price">Rs 1,999</p>
+                        <button type="button" onclick="showBuyPopup('2,500 NepCoins', 'Rs 1,999', 'package_img/package6.png')">
+                            Buy now
+                        </button>
+                    </div>
+
+                </div>
+
+                <p class="store-foot">
+                    Payments are handled manually for now. If a package doesn't arrive within 24 hours,
+                    open a ticket on
+                    <a href="https://discord.gg/BeVw4jVtEf" target="_blank" rel="noopener">Discord</a>
+                    with your receipt and in-game name.
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Made by BISBRO [discord: jucier_pm] &amp; finely tuned by AI</p>
+        </footer>
+
+    </div>
+
+
+    <div id="buy-overlay" class="buy-overlay" aria-hidden="true">
+        <div class="buy-modal" role="dialog" aria-modal="true" aria-labelledby="buy-title">
+
+            <button
+                type="button"
+                class="buy-close"
+                onclick="closeBuyPopup()"
+                aria-label="Close purchase form">
+                &times;
+            </button>
+
+            <div class="buy-header">
+
+                <div class="buy-product">
+                    <img id="buy-product-image" src="package_img/package1.png" alt="NepCoins">
+                </div>
+
+                <div>
+                    <p class="buy-eyebrow">NEPALMC STORE</p>
+                    <h2 id="buy-title">Purchase NepCoins</h2>
+                    <p class="buy-subtitle">
+                        Complete the form below and upload your payment receipt.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="selected-package">
+
+                <div>
+                    <span class="selected-label">Selected package</span>
+                    <strong id="buy-package">50 NepCoins</strong>
+                </div>
+
+                <div class="selected-price">
+                    <span>Price</span>
+                    <strong id="buy-price">Rs 49</strong>
+                </div>
+
+            </div>
+
+
+            <form id="buy-form" onsubmit="submitBuyForm(event)">
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>01</span>
+                        Player information
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+                            <label for="minecraft-username">
+                                Minecraft username
+                            </label>
+
+                            <input
+                                type="text"
+                                id="minecraft-username"
+                                name="minecraftUsername"
+                                placeholder="Your Minecraft username"
+                                maxlength="16"
+                                autocomplete="off"
+                                required>
+
+                            <small>
+                                This is the account that will receive the NepCoins.
+                            </small>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="discord-username">
+                                Discord username
+                            </label>
+
+                            <input
+                                type="text"
+                                id="discord-username"
+                                name="discordUsername"
+                                placeholder="Your Discord username"
+                                maxlength="100"
+                                autocomplete="off"
+                                required>
+
+                            <small>
+                                Used if staff need to contact you.
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>02</span>
+                        Payment information
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="payment-method">
+                                Payment method
+                            </label>
+
+                            <select id="payment-method" name="paymentMethod" required>
+                                <option value="" selected disabled>
+                                    Select payment method
+                                </option>
+
+                                <option value="eSewa">
+                                    eSewa
+                                </option>
+
+                                <option value="Bank Transfer">
+                                    Bank Transfer
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+                            </select>
+
+
+                            <div id="payment-qr" class="payment-qr">
+
+                                <p class="payment-qr-title">
+                                    Payment QR Code
+                                </p>
+                                    <img
+                                        src="assets/payment_qr.jpeg"
+                                        alt="NepalMC Payment QR Code"
+                                        onerror="this.closest('.payment-qr').classList.add('qr-error'); this.nextElementSibling && (this.nextElementSibling.hidden = false);">
+
+                                <p class="qr-fallback" hidden>
+                                    QR code couldn't load. Please open a ticket on Discord and we'll send it to you directly.
+                                </p>
+
+                                <p class="payment-qr-text">
+                                    Scan this QR code to make your payment.
+                                    <strong>
+                                        Keep your payment receipt and upload a clear screenshot of it below.
+                                    </strong>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="transaction-id">
+                                Transaction / reference ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="transaction-id"
+                                name="transactionId"
+                                placeholder="Enter your transaction ID"
+                                maxlength="100"
+                                autocomplete="off"
+                                required>
+
+                            <small>
+                                Enter the transaction or reference number shown on your receipt.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>03</span>
+                        Payment receipt
+                    </div>
+
+                    <div class="upload-area">
+
+                        <input
+                            type="file"
+                            id="payment-screenshot"
+                            name="paymentScreenshot"
+                            accept="image/png,image/jpeg,image/webp"
+                            required>
+
+                        <label for="payment-screenshot" class="upload-label">
+
+                            <div class="upload-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8">
+
+                                    <path d="M12 16V4"></path>
+                                    <path d="M7 9l5-5 5 5"></path>
+                                    <path d="M4 20h16"></path>
+
+                                </svg>
+
+                            </div>
+
+                            <strong id="upload-title">
+                                Upload payment screenshot
+                            </strong>
+
+                            <span id="upload-text">
+                                PNG, JPG or WEBP · Click to choose
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="buy-notice">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9">
+                        </circle>
+
+                        <path d="M12 10v6"></path>
+
+                        <path d="M12 7h.01"></path>
+
+                    </svg>
+
+                    <p>
+                        Your payment will be manually reviewed by NepalMC staff.
+                        Do not submit fake or edited receipts.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-payment">
+                    Submit payment
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div id="success-overlay" class="success-overlay" aria-hidden="true">
+
+        <div class="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title">
+
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12.5l5 5L20 6.5"></path>
+                </svg>
+            </div>
+
+            <h2 id="success-title" class="success-title">Payment submitted</h2>
+
+            <p class="success-text">
+                Your payment has been sent to NepalMC staff for verification.
+            </p>
+
+            <div class="success-code-box">
+                <span class="success-code-label">Your order code</span>
+
+                <div class="success-code-row">
+                    <strong id="success-code" class="success-code">NCP-XXXXXX</strong>
+
+                    <button
+                        type="button"
+                        id="success-code-copy"
+                        class="success-code-copy"
+                        onclick="copyOrderCode()"
+                        aria-label="Copy order code">
+
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="9" y="9" width="12" height="12" rx="2"></rect>
+                            <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path>
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+
+            <p class="success-note">
+                Remember this code. If you don't receive your NepCoins within 24 hours,
+                open a ticket on
+                <a href="https://discord.gg/BeVw4jVtEf" target="_blank" rel="noopener">Discord</a>
+                and include it.
+            </p>
+
+            <button type="button" class="success-close" onclick="closeSuccessPopup()">
+                Got it
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
