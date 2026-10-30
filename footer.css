@@ -1,0 +1,104 @@
+.site-footer {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    margin: auto 0 0;
+    padding: 24px 28px 0;
+    transform: translateX(-50%);
+    overflow: hidden;
+    color: #183c58;
+    text-align: left;
+    background: rgba(7, 20, 33, .72);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(220, 237, 249, .18);
+}
+
+body { padding-bottom: 0 !important; }
+
+.footer-main {
+    display: grid;
+    grid-template-columns: minmax(330px, 1.8fr) repeat(3, minmax(130px, .72fr));
+    align-items: start;
+    gap: clamp(28px, 5vw, 74px);
+    width: min(1520px, 100%);
+    margin: 0 auto;
+    padding: 0 0 22px;
+}
+
+.footer-brand { text-align: left; }
+.footer-brand-lockup { display: inline-flex; align-items: center; gap: 12px; color: #fff; font-size: 21px; font-weight: 800; text-decoration: none; }
+.footer-logo { display: block; width: 48px; height: 48px; object-fit: contain; }
+.footer-description { max-width: 480px; margin: 12px 0 16px; color: rgba(235, 244, 251, .82); font-size: 14px; line-height: 1.6; }
+
+.footer-ip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: min(480px, 100%);
+    min-height: 64px;
+    padding: 9px 10px 9px 20px;
+    color: #0d2e48;
+    background: #fff;
+    border: 1px solid rgba(20, 92, 137, .13);
+    border-radius: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform .18s ease, border-color .18s ease;
+}
+
+.footer-ip:hover { transform: translateY(-2px); border-color: rgba(20, 126, 187, .42); }
+.footer-ip-info { display: grid; gap: 5px; }
+.footer-ip-label { color: #587890; font-size: 9px; font-weight: 800; letter-spacing: .15em; }
+.footer-ip-text { font: 700 15px var(--font-mono, 'JetBrains Mono', monospace); }
+.footer-copy { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 102px; padding: 11px 15px; color: #fff; background: #239fe0; border-radius: 999px; font-size: 14px; font-weight: 700; }
+.footer-copy svg { width: 18px; height: 18px; }
+.footer-copy.copied { background: #1475af; }
+
+.footer-column { display: grid; justify-items: start; gap: 12px; padding-top: 5px; }
+.footer-column h2 { margin: 0 0 3px; color: #fff; font-size: 11px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.footer-column a { color: rgba(235, 244, 251, .82); font-size: 14px; text-decoration: none; transition: color .15s ease; }
+.footer-column a:hover, .footer-column a:focus-visible { color: #087fbe; text-decoration: underline; text-underline-offset: 4px; }
+
+.footer-bottom {
+    width: 100%;
+    padding: 12px 0 8px;
+    border-top: 1px solid rgba(220, 237, 249, .18);
+    color: rgba(235, 244, 251, .68);
+    font-size: 12px;
+    line-height: 1.5;
+}
+.footer-credit { margin-left: 10px; }
+.footer-credit a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footer-credit a:hover, .footer-credit a:focus-visible { color: #fff; }
+
+#page-content { display: flex; flex-direction: column; min-height: calc(100vh - 16px); }
+#page-content .store-page { flex: 1; }
+
+@media (max-width: 900px) {
+    .footer-main { grid-template-columns: minmax(260px, 1.5fr) repeat(3, minmax(110px, .7fr)); gap: 28px; }
+    .footer-description { font-size: 14px; }
+    .footer-column a { font-size: 14px; }
+    .footer-copy { min-width: 96px; padding: 12px; }
+}
+
+@media (max-width: 680px) {
+    .site-footer { padding: 22px 22px 0; }
+    .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 22px; padding-bottom: 18px; }
+    .footer-brand { grid-column: 1 / -1; }
+    .footer-logo { width: 46px; height: 46px; }
+    .footer-description { max-width: 520px; margin: 10px 0 14px; }
+    .footer-ip { width: min(480px, 100%); }
+    .footer-column { gap: 13px; }
+    .footer-bottom { padding: 10px 0 8px; font-size: 11px; }
+}
+
+@media (max-width: 640px) {
+    #page-content { min-height: calc(100vh - 12px); }
+}
+
+@media (max-width: 380px) {
+    .footer-main { grid-template-columns: 1fr 1fr; gap: 28px 16px; }
+    .footer-copy { min-width: auto; gap: 5px; padding: 11px 9px; }
+}
