@@ -1,0 +1,43 @@
+.economy-placeholder {
+    flex: 1;
+    gap: 14px;
+    padding: 76px 20px 96px;
+    color: #f2f5f3;
+}
+
+.economy-placeholder-kicker {
+    color: #a7d9c9;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.economy-placeholder h1 {
+    margin: 0;
+    font-size: clamp(42px, 7vw, 68px);
+    letter-spacing: -.035em;
+}
+
+.economy-placeholder p {
+    max-width: 42ch;
+    margin: 0;
+    color: rgba(241, 245, 243, .78);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.economy-placeholder-link {
+    margin-top: 14px;
+    color: #c9e2d8;
+    font-size: 14px;
+    font-weight: 650;
+    text-underline-offset: 4px;
+}
+
+.economy-placeholder-link:hover { color: #fff; }
+.economy-placeholder-link:focus-visible { outline: 2px solid #d7f2e4; outline-offset: 4px; }
+
+@media (max-width: 700px) {
+    .economy-placeholder { padding: 56px 18px 72px; }
+}
