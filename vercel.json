@@ -1,3 +1,4 @@
+
 {
   "redirects": [
     {
@@ -5,7 +6,6 @@
       "destination": "https://discord.gg/BeVw4jVtEf",
       "permanent": false
     }
-  ]
-
+  ],
   "cleanUrls": true
 }
