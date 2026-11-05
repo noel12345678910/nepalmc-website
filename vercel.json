@@ -6,4 +6,6 @@
       "permanent": false
     }
   ]
+
+  "cleanUrls": true
 }
